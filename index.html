@@ -10,11 +10,11 @@
     <meta name="description" content="십이간지 연애유형">
     
     <!-- 카카오톡 등 link를 공유하거나 했을떄 나타나는 이미지나 문자를 설정 -->
-    <meta property="og.url" content="" />
-    <meta property="og.title" content="십이간지 연애유형" />
+    <meta property="og.url" content="https://twelvezodiacsign.netlify.app" />
+    <meta property="og.title" content="야 마 함 해바라" />
     <meta property="og.type" content="Website" />
     <meta property="og.image" content="img/share.png" />
-    <meta property="og.description" content="십이간지로 알아보는 연애유형" />
+    <meta property="og.description" content="재미로 만들어 봤다" />
 
     <!-- 브라우저상에서 탭에 있는 조그마한 아이콘(favicon) 만들기 -->
     <link rel="shortcut icon" href="img/heart_favicon">
@@ -41,6 +41,13 @@
     <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="./css/result.css">
     <link rel="stylesheet" href="./css/animation.css">
+
+    <!-- 카카오 SDK -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('9510ae30e4caca2df646d2805e40c29a');
+        Kakao.isInitialized();
+    </script>
 
     <title>십이간지 연애유형</title>
 </head>
@@ -89,7 +96,7 @@
             <div class="resultDesc">
 
             </div>
-            <button type="button" class="kakao btn btn-danger mt-3 py-2 px-3" onclick="js:begin()">공유하기</button> 
+            <button type="button" class="kakao btn btn-danger mt-3 py-2 px-3" onclick="js:kakaoShare()">공유하기</button> 
         </section>
     </div>
 
@@ -98,6 +105,7 @@
 
     <script src="/js/data_copy.js" charset="utf-8"></script>
     <script src="/js/start_copy.js" charset="utf-8"></script>
+    <script src="/js/kakao_share.js" charset="utf-8"></script>
 </body>
 
 </html>
