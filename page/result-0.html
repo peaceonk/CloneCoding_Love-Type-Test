@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="PeaceCloneCoding">
+        <meta name="keywords" content="십이간지 연애유형">
+        <meta name="description" content="십이간지 연애유형">
+        
+        <!-- 카카오톡 등 link를 공유하거나 했을떄 나타나는 이미지나 문자를 설정 -->
+        <meta property="og.url" content="https://twelvezodiacsign.netlify.app" />
+        <meta property="og.title" content="야 마 함 해바라" />
+        <meta property="og.type" content="Website" />
+        <meta property="og.image" content="img/share.png" />
+        <meta property="og.description" content="재미로 만들어 봤다" />
+    
+        <!-- 브라우저상에서 탭에 있는 조그마한 아이콘(favicon) 만들기 -->
+        <link rel="shortcut icon" href="img/heart_favicon">
+        <!-- 애플기기를 위해서 -->
+        <link rel="apple-touch-icon-precomposed" href="img/heart_favicon">
+    
+        <!-- 부트스트랩 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+    
+        <!-- 부가적인 테마 -->
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
+    
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+        <!-- 구글폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="/css/default.css">
+        <link rel="stylesheet" href="/css/result.css">
+    
+        <!-- 카카오 SDK -->
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script>
+            Kakao.init('9510ae30e4caca2df646d2805e40c29a');
+            Kakao.isInitialized();
+        </script>
+    
+        <title>십이간지 연애유형</title>
+    </head>
+    
+    <body>
+        <section id="shareResult" class="mx-auto my-5 py-5 px-3">
+            <h1>당신의 결과 유형은?!</h1>
+            <div class="resultName">
+                <p>연애 뭐 식은 죽 먹기죠, 연애 재능 만땅  &lt;쥐&gt;</p>
+            </div>
+            <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+                <img src="/img/image-0.png" alt="0" class="img-fluid" >
+            </div>
+            <div class="resultDesc">
+                <p>연애의 프로재능러인 당신! 쥐에 해당하는 당신은 연애의 모든 것들을 알고 있어, 쉽게 연애에 성공하는 스타일이랍니다. 주로 포부가 크고 성격이 낙천적인 성향을 가지고 있고, 논리적이면서 두뇌회전이 매우 빠르다고 할 수 있어요. 말재주 또한 좋아 사교성이 좋고 유쾌하지만 화려한 것을 좋아해 허영심을 부리거나 사치를 부리기 때문에 이 점들을 주의해야 돼요. 뛰어난 능력에 자만하는 경우도 종종 있기 때문에 겸손이 필요하답니다! '
+                </p>
+            </div>
+            <button type="button" class="kakao btn btn-danger mt-3 py-2 px-3" onclick="js:kakaoShare()">공유하기</button> 
+        </section>
+    </body>
+</html>
