@@ -1,0 +1,3 @@
+my : margin y축
+
+px : padding x축

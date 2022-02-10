@@ -1,0 +1,5 @@
+white-space: nowrap;
+css로 텍스트의 바꿈은 방지하는 코드이지만 텍스트가 주어진 범위를 벗어나게함
+
+object.style.whiteSpace="pre";
+자바스크립트 명령어인 이것도 마찬가지임.
