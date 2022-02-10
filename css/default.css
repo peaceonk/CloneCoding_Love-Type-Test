@@ -1,6 +1,8 @@
 body{
     background-color: pink;
-    
+    /* web에서 너무 작아지면 안예뻐서 직접 작성함
+        사실 여기보단 body아래 하는게 좋지 않을까??  */
+    min-width: 500px;
 }
 
 *{
